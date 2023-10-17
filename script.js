@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
     localStorage.removeItem("usuario");
+    localStorage.removeItem("arregloEnvio");
     
     const boton = document.querySelector("#botonLogin");
 

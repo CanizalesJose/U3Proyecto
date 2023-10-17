@@ -1,3 +1,4 @@
+//Validar que no entre a la tienda nadie que tenga una sesión
 const user = JSON.parse(localStorage.getItem("usuario"));
 if (user == null) {
     window.location.href = "index.html";
