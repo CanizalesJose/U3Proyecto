@@ -2,6 +2,8 @@
 const user = JSON.parse(localStorage.getItem("usuario"));
 if (user == null) {
     window.location.href = "index.html";
+}else{
+    document.querySelector("#usuarioBarra").textContent = user[0];
 }
 
 document.addEventListener("DOMContentLoaded", function(){
