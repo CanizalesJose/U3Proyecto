@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function(){
     localStorage.removeItem("arregloEnvio");
     
     const boton = document.querySelector("#botonLogin");
+    const mensajeError = document.querySelector("#mensajeError");
+    mensajeError.setAttribute("style", "display:none");
 
     boton.addEventListener("click", function(){
         
@@ -21,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function(){
             localStorage.setItem("usuario", JSON.stringify(usuario));
             window.location.href = "tienda.html";
         }else{
+            mensajeError.setAttribute("style", "display:flex");
             console.log("Error...");
         }
 
